@@ -1,0 +1,94 @@
+:root{
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-greyish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--dark-blue);
+    font-family: sans-serif;
+}
+.container{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+}
+.advice-info{
+    height: 300px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--dark-greyish-blue);
+}
+.advice-no{
+    text-transform: uppercase;
+    color: var(--neon-green);
+    letter-spacing: 3px;
+    font-size: small;
+    padding: 15px;
+}
+.advice{
+    height: 50%;
+    display: flex;
+    padding: 0 20px;
+    line-height: 25px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: var(--light-cyan);
+}
+.advice p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.advice-info img{
+    margin-top: 33px;
+    width: 100%;
+}
+#dice{
+    -webkit-tap-highlight-color: transparent;
+    background-color: var(--neon-green);
+    width: fit-content;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -28px;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+}
+#dice:hover{
+    background-color: hsl(149, 100%, 56%);
+}
+#dice img{
+    display: flex;
+    justify-content: center;
+    padding: 18px;
+    margin: 0 auto;
+    outline: none;
+    user-select: none;
+}
+
+@media screen and (min-width: 700px) {
+    .container{
+        width: 50%;
+    }
+    .advice-info{
+        height: 260px;
+        border-radius: 15px;
+        padding: 40px;
+    }
+    .advice-no{
+        padding: 10px;
+    }
+    .advice{
+        font-size: 24px;
+    }
+}
